@@ -1,0 +1,23 @@
+begin
+	var x := 20;
+	var xyz := 10;
+	var abcdef;
+	var y := 4;
+	var i := 30;
+	if(x+y==y+xyz)
+		then x:=x+1;
+	else y:=y+1;
+	endif;
+	for i in range (0 to 10)
+		do
+		 if(x+y==y+xyz)
+			then x:=x+1;
+		else y:=y+1;
+		endif;
+	endfor;
+	while(x!=y)
+	do
+		y:= x+y==y+xyz? x+1: y+1;
+	endwhile;
+	print(y);
+end
